@@ -7,15 +7,20 @@ $(document).ready(function () {
     });
 
 
-    $("#datepicker").datepicker().datepicker('setDate', new Date());
+    $("#datepicker").datepicker({
+        dateFormat: "M d yy"
+    }).datepicker('setDate', new Date());
     console.log(new Date());
+
+    
     var DateofInjection = $("#datepicker").datepicker('getDate');
+    $("#datepicker").val(moment(DateofInjection).format("MMM Do YYYY"));
     console.log(DateofInjection);
 
-    var BeginningDate = moment(DateofInjection).add(11, 'weeks').calendar();
+    var BeginningDate = moment(DateofInjection).add(11, 'weeks').format("MMM Do YYYY");
     console.log(BeginningDate);
 
-    var EndDate = moment(DateofInjection).add(13, 'weeks').calendar();
+    var EndDate = moment(DateofInjection).add(13, 'weeks').format("MMM Do YYYY");
     console.log(EndDate);
 
     $("#BeginningDate").text(BeginningDate);
@@ -24,12 +29,13 @@ $(document).ready(function () {
 
     $("#datepicker").change(function () {
         DateofInjection = $("#datepicker").datepicker('getDate');
+        $("#datepicker").val(moment(DateofInjection).format("MMM Do YYYY"));
         console.log(DateofInjection)
 
-        BeginningDate = moment(DateofInjection).add(11, 'weeks').calendar();
+        BeginningDate = moment(DateofInjection).add(11, 'weeks').format("MMM Do YYYY");
         console.log(BeginningDate);
 
-        EndDate = moment(DateofInjection).add(13, 'weeks').calendar();
+        EndDate = moment(DateofInjection).add(13, 'weeks').format("MMM Do YYYY");
         console.log(EndDate);
 
         $("#BeginningDate").text(BeginningDate);
