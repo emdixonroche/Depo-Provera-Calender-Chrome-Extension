@@ -97,8 +97,8 @@ header {
     color: #9E99AE;
 }
 
-.footersection {
-
+#datepicker {
+    width: 70vw;
 }
 
 #disclaimer {
