@@ -7,6 +7,10 @@
     margin: 0;
 }
 
+title {
+    display: none;
+}
+
 body {
     height: 100vh;
 }
@@ -98,10 +102,6 @@ header {
     font-size: 10px;
     line-height: 12px;
     color: #3F3B4B;
-}
-
-#maintitle {
-    display: none;
 }
 
 @media only screen and (max-width: 600px) {
