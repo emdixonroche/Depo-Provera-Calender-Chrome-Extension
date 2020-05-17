@@ -11,9 +11,9 @@ title {
     display: none;
 }
 
-body {
+/* body {
     height: 100vh;
-}
+} */
 
 header {
    text-align: center;
@@ -49,6 +49,9 @@ header {
 .content {
    margin: 40px; 
    align-items: center;
+   display: block;
+   width: 70vw;
+   margin: 40px auto;
 }
 
 .minicontent {
