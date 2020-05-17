@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,300&display=swap');
 
 * {
-    display: flex;
-    flex-direction: column;
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
@@ -10,10 +8,6 @@
 title {
     display: none;
 }
-
-/* body {
-    height: 100vh;
-} */
 
 header {
    text-align: center;
@@ -32,18 +26,27 @@ header {
     line-height: 42px;
 }
 
-#subtitle{
-    font-style: italic;
-    font-weight: 300;
-    font-size: 32px;
-    line-height: 42px;
-}
-
 #icon {
     width: 115px;
     height: 104px;
     left: 130px;
     top: 181px;
+}
+
+#titleheaderDESKTOP {
+    display: flex;
+    justify-items: center;
+}
+
+#titleheaderMOBILE {
+    display: none;
+}
+
+#subtitle {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 42px;
 }
 
 .content {
@@ -108,7 +111,18 @@ header {
 }
 
 @media only screen and (max-width: 600px) {
+
     header {
         padding-top: 20px;
     }
+
+    #titleheaderDESKTOP {
+        display: none;
+    }
+    
+    #titleheaderMOBILE {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
