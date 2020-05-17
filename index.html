@@ -5,22 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-
     <header>
-        <h1>Injection Date</h1>
-        <input type="text" id="datepicker">
+        <h1 class="title">Perpetual Calendar</h1>
+        <h1 class="title" id="subtitle">Depo-Provera</h1>
+        <img id="icon" src="images/Perpetual_calendar_icon-02.svg">
     </header>
 
-    <main>
-        <h1>Next Injection Due Date</h1>
-        <h2 id="BeginningDate"></h2> - <h2 id="EndDate"></h2>
-    </main>
+    <div class="content">
+        <section class="subcontent">
+            <h2 class="injectiontitle">Injection Date</h2>
+            <input type="text" id="datepicker" class="date">
+        </section>
 
-  
+        <section class="subcontent">
+            <h2 class="injectiontitle">Next Injection Due</h2>
+            <h4 class="indicator">From</h4>
+            <h3 id="BeginningDate" class="date"></h3>
+            <h4 class="indicator">To</h4>
+            <h3 id="EndDate" class="date"></h3>
+        </section>
+
+        <footer class="footersection">
+            <p id="disclaimer">The calendar claculations are based on the Depo-Provera Contraceptive Injection Perpetual
+                Calendar created by Pharmacia & Upjohn Company.</p>
+        </footer>
+
+    </div>
+
+
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://momentjs.com/downloads/moment.js"></script>
