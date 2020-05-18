@@ -5,8 +5,20 @@
     margin: 0;
 }
 
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 title {
     display: none;
+}
+
+body {
+    width: 100vw;
 }
 
 header {
@@ -50,19 +62,14 @@ header {
 }
 
 .content {
-   margin: 40px; 
    align-items: center;
    display: block;
-   width: 70vw;
+   width: 250px;
    margin: 40px auto;
 }
 
 .minicontent {
     align-items: left;
-}
-
-.subcontent {
-    /* margin-bottom: 20px; */
 }
 
 .injectiontitle {
@@ -124,5 +131,12 @@ header {
         display: flex;
         flex-direction: column;
     }
+
+    .content {
+        align-items: center;
+        display: block;
+        width: 70vw;
+        margin: 40px auto;
+     }
 
 }
