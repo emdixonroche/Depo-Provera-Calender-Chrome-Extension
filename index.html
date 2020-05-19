@@ -24,24 +24,30 @@
 
     <div class="content">
         <main class="minicontent">
-        <section class="subcontent">
-            <h2 class="injectiontitle">Injection Date</h2>
-            <input type="text" id="datepicker" class="date" readonly>
-        </section>
+            <section class="subcontent">
+                <div class="todaysetting">
+                <h2 class="injectiontitle" id="injectiontitletop">Injection Date</h2>
+                <input type="text" id="datepicker" class="date" readonly>
+                <button id="resetbutton" class="resetbuttondisplay">Reset</button>
+            </div>
+            </section>
 
-        <section class="subcontent">
-            <h2 class="injectiontitle">Next Injection Due</h2>
-            <h4 class="indicator">From</h4>
-            <h3 id="BeginningDate" class="date"></h3>
-            <h4 class="indicator">To</h4>
-            <h3 id="EndDate" class="date"></h3>
-        </section>
+            <section class="subcontent">
+                <h2 class="injectiontitle">Next Injection Due</h2>
+                <div id="daterange">
+                    <h4 class="indicator" id="fromindicator">From</h4>
+                    <h3 id="BeginningDate" class="date"></h3>
+                    <h4 class="indicator">To</h4>
+                    <h3 id="EndDate" class="date"></h3>
+                </div>
+            </section>
 
-        <footer class="footersection">
-            <p id="disclaimer">The calendar claculations are based on the Depo-Provera Contraceptive Injection Perpetual
-                Calendar created by Pharmacia & Upjohn Company.</p>
-        </footer>
-    </main>
+            <footer class="footersection">
+                <p id="disclaimer">The calendar claculations are based on the Depo-Provera Contraceptive Injection
+                    Perpetual
+                    Calendar created by Pharmacia & Upjohn Company.</p>
+            </footer>
+        </main>
 
     </div>
 

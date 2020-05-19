@@ -62,14 +62,16 @@ header {
 }
 
 .content {
-   align-items: center;
-   display: block;
-   width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
    margin: 40px auto;
 }
 
-.minicontent {
-    align-items: left;
+#daterange {
+    display: flex;
+    display: row;
+    align-items: baseline;
 }
 
 .injectiontitle {
@@ -80,6 +82,10 @@ header {
     color: #A793DE;
     text-transform: uppercase;
     margin-bottom: 13px;
+}
+
+#injectiontitletop {
+    margin-bottom: 5px;
 }
 
 .date {
@@ -93,6 +99,11 @@ header {
 
 #datepicker {
     width: 100%;
+    margin-bottom: 10px;
+}
+
+.todaysetting {
+    margin-bottom: 35px;
 }
 
 #BeginningDate {
@@ -105,7 +116,39 @@ header {
     font-size: 22px;
     line-height: 26px;
     text-transform: uppercase;
-    color: #9E99AE;
+    color: #949494;
+    margin: 0px 10px;
+}
+
+#fromindicator {
+    margin-left: 0px;
+}
+
+.resetbuttondisplay {
+    display: none;
+}
+
+#resetbutton {
+    color: white;
+    border-style: none;
+    padding: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    background-color: #A793DE;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    width: 100px;
+}
+
+#resetbutton:focus {
+    outline: none;
+}
+
+#resetbutton:hover {
+    background-color: #FFC800;
 }
 
 #disclaimer {
@@ -114,7 +157,7 @@ header {
     font-weight: 200;
     font-size: 10px;
     line-height: 12px;
-    color: #3F3B4B;
+    color: #949494;
 }
 
 @media only screen and (max-width: 600px) {
@@ -135,8 +178,16 @@ header {
     .content {
         align-items: center;
         display: block;
-        width: 70vw;
+        width: 250px;
         margin: 40px auto;
      }
+
+     #daterange {
+        display: block;
+    }
+
+    .indicator {
+        margin: 0px 0px;
+    }
 
 }
