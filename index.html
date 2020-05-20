@@ -26,19 +26,24 @@
         <main class="minicontent">
             <section class="subcontent">
                 <div class="todaysetting">
-                <h2 class="injectiontitle" id="injectiontitletop">Injection Date</h2>
-                <input type="text" id="datepicker" class="date" readonly>
-                <button id="resetbutton" class="resetbuttondisplay">Reset</button>
-            </div>
+                    <h2 class="injectiontitle" id="injectiontitletop">Injection Date</h2>
+                    <input type="text" id="datepicker" class="date" readonly>
+                    <button id="resetbutton" class="resetbuttondisplay">Reset</button>
+                </div>
             </section>
 
             <section class="subcontent">
                 <h2 class="injectiontitle">Next Injection Due</h2>
-                <div id="daterange">
-                    <h4 class="indicator" id="fromindicator">From</h4>
-                    <h3 id="BeginningDate" class="date"></h3>
-                    <h4 class="indicator">To</h4>
-                    <h3 id="EndDate" class="date"></h3>
+                <div class="daterange">
+                    <h4 class="MOBILEdaterange">
+                        <span class="indicator" id="fromindicator">From </span>
+                            <br class="breakdateMOBILE">
+                        <span id="BeginningDate" class="date" class="MOBILEdate"></span>
+                            <br class="breakdateMOBILE">
+                        <span class="indicator" class="MOBILEdate"> To </span>
+                            <br class="breakdateMOBILE">
+                        <span id="EndDate" class="date"></span>
+                    </h4>
                 </div>
             </section>
 
