@@ -1,3 +1,6 @@
+/* CHROME EXTENSION EDITION */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,300&display=swap');
 
 * {
@@ -7,19 +10,15 @@
 
 html,body
 {
-    width: 100%;
+    width: 450px;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
 }
 
-title {
+/* title {
     display: none;
-}
-
-body {
-    width: 100vw;
-}
+} */
 
 header {
    text-align: center;
@@ -27,52 +26,50 @@ header {
    border-bottom: 10px solid #FFC800;
    align-items: center;
    justify-content: center;
-   height: 230px;
+   height: 100px;
+   padding-top: 20px;
 }
 
 .title {
     color: white;
     font-style: normal;
     font-weight: normal;
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 20px;
+    line-height: 25px;
 }
 
 #icon {
-    width: 115px;
-    height: 104px;
-    left: 130px;
-    top: 181px;
+    width: 90px;
 }
 
 #titleheaderDESKTOP {
     display: flex;
-    justify-items: center;
-}
-
-#titleheaderMOBILE {
-    display: none;
+    flex-direction: row;
 }
 
 #subtitle {
     font-style: italic;
     font-weight: 300;
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 20px;
+    line-height: 25px;
 }
 
-.content {
+.subcontent {
     display: flex;
     flex-direction: column;
-    align-items: center;
-   margin: 40px auto;
+    margin-bottom: 35px;
+}
+
+
+.content {
+    margin: 20px 0px 0px 20px;
+    
 }
 
 .daterange {
     display: flex;
     display: row;
     align-items: baseline;
-    margin-bottom: 35px;
 }
 
 .injectiontitle {
@@ -92,33 +89,25 @@ header {
 .date {
     font-style: normal;
     font-weight: 500;
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 20px;
+    line-height: 25px;
     color: #3F3B4B;
-    margin-bottom: 35px;
 }
 
 #datepicker {
-    width: 100%;
+    width: 200px;
     margin-bottom: 10px;
-}
-
-.todaysetting {
-    margin-bottom: 35px;
+    margin-right: 20px;
 }
 
 .indicator {
     font-style: normal;
     font-weight: normal;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 20px;
+    line-height: 23px;
     text-transform: uppercase;
     color: #949494;
-    margin: 0px 10px;
-}
-
-#fromindicator {
-    margin-left: 0px;
+    margin: 0px 0px;
 }
 
 .resetbuttondisplay {
@@ -128,16 +117,15 @@ header {
 #resetbutton {
     color: white;
     border-style: none;
-    padding: 10px;
+    padding: 2px;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 26px;
     background-color: #A793DE;
-    margin-bottom: 35px;
     border-radius: 10px;
     text-transform: uppercase;
-    width: 100px;
+    width: 75px;
 }
 
 #resetbutton:focus {
@@ -148,65 +136,19 @@ header {
     background-color: #FFC800;
 }
 
-#disclaimer {
+/* #disclaimer {
     text-align: center;
     font-style: normal;
     font-weight: 200;
     font-size: 10px;
     line-height: 12px;
     color: #949494;
+} */
+
+#disclaimer {
+    display: none;
 }
 
 .breakdateMOBILE {
     display: none;
-}
-
-
-@media only screen and (max-width: 600px) {
-
-    header {
-        padding-top: 20px;
-    }
-
-    #titleheaderDESKTOP {
-        display: none;
-    }
-    
-    #titleheaderMOBILE {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .content {
-        align-items: center;
-        display: block;
-        width: 250px;
-        margin: 40px auto;
-     }
-
-    .indicator {
-        margin: 0px 0px;
-    }
-
-    .daterange {
-        flex-direction: column;
-    }
-
-    .breakdateMOBILE {
-        display: block;
-    }
-
-    span {
-        display: block;
-    }
-
-    #BeginningDate {
-        margin-bottom: 25px;
-    }
-
-    .date {
-        margin-bottom: 0px;
-        line-height: 15px;
-    }
-
 }

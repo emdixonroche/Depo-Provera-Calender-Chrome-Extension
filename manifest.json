@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Perpetual Calendar Calculator",
+    "version": "0.2",
+    "icons": {  "16": "favicon.png",
+                "128": "favicon.png"},
+    "description": "Calculate Depo-Provera next injection due date range.",
+
+    
+    "browser_action": {
+        "default_popup": "popup.html"
+    }
+    
+}

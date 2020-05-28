@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    // CHROME EXTENSION EDITION
+
     //   alert("Hello world!");
 
     $(function () {
@@ -88,18 +90,6 @@ $('#resetbutton').click(function () {
     $("#resetbutton").addClass("resetbuttondisplay")
 
 });
-
-
-
-
-// $(".MOBILEdate").unwrap();
-
-
-
-
-
-
-             
 
 
 moment().calendar();
